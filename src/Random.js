@@ -2,13 +2,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import React,{useState,useEffect} from 'react';
 import {Button,Grid} from '@mui/material/';
-
-import {
-    createMuiTheme,
-    responsiveFontSizes,
-  } from "@mui/material/";
-  
-  
+ 
 
 export default function Types() {
     const [quote,setQuote]= useState("");
@@ -40,9 +34,6 @@ export default function Types() {
     
         }
       )
-      let theme = createMuiTheme();
-      theme = responsiveFontSizes(theme);
-      
     }
     // justifyContent: 'flex-start', fontWeight: 'bold',spacing:29
   return (
