@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+  margin: auto;
+  box-sizing: border-box;
+outline: none;
+
+}
+.App {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+.quote{
+  background-color: aliceblue;
+  width: 450px;
+  padding: 40px;
+  border: 3px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5%;
+}
+.quote h1{
+  font-size: 2em;
+}
+.quote small{
+  font-size: 1.5em;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  color: grey;
+}
+.btn{
+color: white;
+background-color: blueviolet;
+border-radius: 60px;
+padding: 15px 10px;
+text-align: center;
+
+}
