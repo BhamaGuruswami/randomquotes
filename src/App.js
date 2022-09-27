@@ -1,4 +1,4 @@
-//import React,{useState,useEffect} from 'react';
+import React,{useState,useEffect} from 'react';
 import './App.css';
 import Random from './Random'
 // import Typography from '@mui/material/Typography';
@@ -7,37 +7,37 @@ import Random from './Random'
 
 
 function App() {
-//   const [quote,setQuote]= useState("");
-// const [author,setAuthor]= useState("");
-// // https://type.fit/api/quotes
+  const [quote,setQuote]= useState("");
+const [author,setAuthor]= useState("");
+// https://type.fit/api/quotes
 
-// useEffect(() =>{
-//   fetch("https://type.fit/api/quotes")
-//   .then(res => res.json())
-//   .then(
-//     (quote)=>{
-//       var rNum = Math.floor(Math.random() * 150 )
-//       setQuote(quote[rNum].text);
-//       setAuthor(quote[rNum].author);
-//       console.log(quote)
+useEffect(() =>{
+  fetch("https://type.fit/api/quotes")
+  .then(res => res.json())
+  .then(
+    (quote)=>{
+      var rNum = Math.floor(Math.random() * 150 )
+      setQuote(quote[rNum].text);
+      setAuthor(quote[rNum].author);
+      console.log(quote)
 
-//     }
-//   )
+    }
+  )
 
-// },[])
-// let fetchquote =()=>{
-//   fetch("https://type.fit/api/quotes")
-//   .then(res => res.json())
-//   .then(
-//     (quote)=>{
-//       var rNum = Math.floor(Math.random() * 150 )
-//       setQuote(quote[rNum].text);
-//       setAuthor(quote[rNum].author);
+},[])
+let fetchquote =()=>{
+  fetch("https://type.fit/api/quotes")
+  .then(res => res.json())
+  .then(
+    (quote)=>{
+      var rNum = Math.floor(Math.random() * 150 )
+      setQuote(quote[rNum].text);
+      setAuthor(quote[rNum].author);
 
-//     }
-//   )
+    }
+  )
 
-// }
+}
   return (
     // <Box sx={{ width: '100%', maxWidth: 500 }}>
 
@@ -62,8 +62,16 @@ function App() {
     Success
 </Button>
  </Box> */}
-    
-<Random/>
+ <div className='quotes'>
+ <h1 className="H1">      {quote}
+</h1>
+<p className="h4 author"> {author} <span><button type="button " class="btn btn-outline-primary" onClick={fetchquote}>Change</button>
+</span> </p>
+
+ </div>
+
+
+{/* <Random/> */}
       </div>
           // </Box>
 

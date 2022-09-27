@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import React,{useState,useEffect} from 'react';
 import {Button,Grid} from '@mui/material/';
+import './App.css'
  
 
 export default function Types() {
@@ -37,19 +38,25 @@ export default function Types() {
     }
     // justifyContent: 'flex-start', fontWeight: 'bold',spacing:29
   return (
-    <Box sx={{fontWeight: 900,fontSize:{
+    <Box sx={{fontSize:{
         lg: 30,
         md: 20,
         sm: 15,
         xs: 10
-      } }}>
+      }}}>
+        {/* <h1>Random Quote</h1> */}
       <Typography variant="h1" gutterBottom>
       {quote}      </Typography>
       <Typography variant="subtitle1" gutterBottom>
       {author}      </Typography>
-      <Grid>
+      <Grid sx={{fontSize:{
+        lg: 30,
+        md: 20,
+        sm: 15,
+        xs: 10
+      }}}>
 
-      <Button  sx={{l:5}} variant="contained" color="success" onClick={fetchquote}>
+      <Button  sx={{l:5,position: 'relative',left: 500}} variant="contained" color="success" onClick={fetchquote}>
     Success
 </Button>
 </Grid>

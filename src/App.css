@@ -3,7 +3,7 @@
 *{
   margin: auto;
   box-sizing: border-box;
-outline: none;
+  outline: none;
 
 }
 .App {
@@ -19,15 +19,23 @@ outline: none;
 
 
 }
-.quote{
-  background-color: aliceblue;
+.quotes{
+  /* background-color: aliceblue;
   width: 450px;
   padding: 40px;
-  border: 3px solid grey;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  border-radius: 5%;
+  border: 3px solid grey; */
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5%; */
+  font-weight: bold;
+  font-size: 3rem;
+  text-justify:justify;
 }
-.quote h1{
+.author{
+  font-weight: lighter;
+  margin: 45px;
+
+}
+/* .quote h1{
   font-size: 2em;
 }
 .quote small{
@@ -35,12 +43,28 @@ outline: none;
   font-family: 'Lora', serif;
   font-style: italic;
   color: grey;
-}
-.btn{
+} */
+/* .btn{
 color: white;
 background-color: blueviolet;
 border-radius: 60px;
 padding: 15px 10px;
 text-align: center;
 
+} */
+h1{
+  justify-content: center;
+  text-justify: auto;
+  margin: 40px;
+}
+button{
+  color: white;
+background-color: blueviolet;
+border-radius: 60px;
+padding: 15px 30px;
+margin-left: 55%;
+border: none;
+/* top: 45px;
+margin-top: 30px;
+margin-bottom: 300px; */
 }
