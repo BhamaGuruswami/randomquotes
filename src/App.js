@@ -71,7 +71,7 @@ let fetchquote =()=>{
  </div>
 
 
-{/* <Random/> */}
+<Random/>
       </div>
           // </Box>
 
