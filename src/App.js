@@ -65,7 +65,7 @@ let fetchquote =()=>{
  <div className='quotes'>
  <h1 className="H1">      {quote}
 </h1>
-<p className="h4 author"> {author} <span><button type="button " class="btn btn-outline-primary" onClick={fetchquote}>Change</button>
+<p className="h6 author"> {author} <span><button type="button " class="btn btn-outline-primary" onClick={fetchquote}>Change</button>
 </span> </p>
 
  </div>

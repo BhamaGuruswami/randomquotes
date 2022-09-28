@@ -31,9 +31,8 @@
   text-justify:justify;
 }
 .author{
-  font-weight: lighter;
   margin: 45px;
-
+font-weight: 200;
 }
 /* .quote h1{
   font-size: 2em;
@@ -58,13 +57,15 @@ h1{
   margin: 40px;
 }
 button{
-  color: white;
+color: white;
 background-color: blueviolet;
 border-radius: 60px;
 padding: 15px 30px;
-margin-left: 55%;
+margin-left: 25%;
 border: none;
-/* top: 45px;
-margin-top: 30px;
-margin-bottom: 300px; */
+position: fixed;
+z-index: 3000;
+
+/* margin-top: 30px;
+margin-bottom: 300px;  */
 }
