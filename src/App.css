@@ -26,8 +26,8 @@
   border: 3px solid grey; */
   /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 5%; */
-  font-weight: bold;
-  font-size: 3rem;
+  font-weight: normal;
+ font-size: 3rem;
   text-justify:justify;
 }
 .author{

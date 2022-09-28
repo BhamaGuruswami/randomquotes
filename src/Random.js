@@ -47,7 +47,7 @@ export default function Types() {
         {/* <h1>Random Quote</h1> */}
       <Typography variant="h1" gutterBottom>
       {quote}      </Typography>
-      <Typography variant="subtitle1" gutterBottom>
+      <Typography  sx={{fontWeight:"lighter"}} variant="h5" gutterBottom>
       {author}      </Typography>
       <Grid sx={{fontSize:{
         lg: 30,
@@ -57,7 +57,7 @@ export default function Types() {
       }}}>
 
       <Button  sx={{l:5,position: 'relative',left: 500}} variant="contained" color="success" onClick={fetchquote}>
-    Success
+    Change
 </Button>
 </Grid>
 
